@@ -82,7 +82,7 @@ void esp_blufi_disconnect(void);
 void esp_blufi_adv_stop(void);
 
 /* Start advertisement */
-void esp_blufi_adv_start(void);
+void esp_blufi_adv_start(const char *dev_name);
 
 void esp_blufi_send_encap(void *arg);
 

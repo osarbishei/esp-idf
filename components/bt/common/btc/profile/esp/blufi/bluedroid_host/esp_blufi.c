@@ -368,9 +368,9 @@ void esp_blufi_deinit(void)
     BTA_GATTS_AppDeregister(blufi_env.gatt_if);
 }
 
-void esp_blufi_adv_start(void)
+void esp_blufi_adv_start(const char *dev_name)
 {
-    esp_ble_gap_set_device_name(BLUFI_DEVICE_NAME);
+    esp_ble_gap_set_device_name(dev_name);
     esp_ble_gap_config_adv_data(&blufi_adv_data);
 }
 
